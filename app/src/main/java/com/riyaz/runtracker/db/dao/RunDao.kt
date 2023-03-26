@@ -1,6 +1,5 @@
 package com.riyaz.runtracker.db.dao
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.riyaz.runtracker.db.entity.Run
 import kotlinx.coroutines.flow.Flow
