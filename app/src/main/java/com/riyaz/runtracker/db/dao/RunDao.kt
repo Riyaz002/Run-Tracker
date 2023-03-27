@@ -12,6 +12,15 @@ abstract class RunDao {
     @Delete
     abstract suspend fun deleteRun(run: Run)
 
-    @Query("SELECT * FROM run_table")
-    abstract fun getAllRuns(): Flow<List<Run>>
+    @Query("SELECT * FROM run_table ORDER BY timestamp DESC")
+    abstract fun getAllRunsSortedByTimestamp(): Flow<List<Run>>
+
+    @Query("SELECT * FROM run_table ORDER BY distanceInMeters DESC")
+    abstract fun getAllRunsSortedByDistanceRun(): Flow<List<Run>>
+
+    @Query("SELECT * FROM run_table ORDER BY averageSpeedInKMH DESC")
+    abstract fun getAllRunsSortedByAverageSpeed(): Flow<List<Run>>
+
+    @Query("SELECT * FROM run_table ORDER BY caloriesBurned DESC")
+    abstract fun getAllRunsSortedByCaloriesBurned(): Flow<List<Run>>
 }
