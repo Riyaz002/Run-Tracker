@@ -1,0 +1,162 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.riyaz.runtracker"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+8-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:6:5-79
+11-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+13-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:8:5-85
+13-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:8:22-82
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:9:5-77
+14-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:9:22-74
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+22
+23    <queries>
+23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+24
+25        <!-- Needs to be explicitly declared on Android R+ -->
+26        <package android:name="com.google.android.apps.maps" />
+26-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+26-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+27    </queries>
+28
+29    <permission
+29-->[androidx.core:core:1.9.0] C:\Users\Home\.gradle\caches\transforms-3\b2b8dd368b04aa230aeb477a899ad4ef\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+30        android:name="com.riyaz.runtracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.9.0] C:\Users\Home\.gradle\caches\transforms-3\b2b8dd368b04aa230aeb477a899ad4ef\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.9.0] C:\Users\Home\.gradle\caches\transforms-3\b2b8dd368b04aa230aeb477a899ad4ef\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.riyaz.runtracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.9.0] C:\Users\Home\.gradle\caches\transforms-3\b2b8dd368b04aa230aeb477a899ad4ef\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.9.0] C:\Users\Home\.gradle\caches\transforms-3\b2b8dd368b04aa230aeb477a899ad4ef\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:11:5-36:19
+36        android:allowBackup="true"
+36-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:12:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.9.0] C:\Users\Home\.gradle\caches\transforms-3\b2b8dd368b04aa230aeb477a899ad4ef\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:13:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:14:9-54
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:15:9-43
+43        android:label="@string/app_name"
+43-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:16:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:17:9-54
+45        android:supportsRtl="true"
+45-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:18:9-35
+46        android:theme="@style/Theme.RunTracker" >
+46-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:19:9-48
+47        <activity
+47-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:21:9-29:20
+48            android:name="com.riyaz.runtracker.MainActivity"
+48-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:22:13-41
+49            android:exported="true"
+49-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:23:13-36
+50            android:launchMode="singleTask" >
+50-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:22:42-73
+51            <intent-filter>
+51-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:24:13-28:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:25:17-69
+52-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:25:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:27:17-77
+54-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:27:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <meta-data
+58-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:30:9-32:69
+59            android:name="com.google.android.gms.version"
+59-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:31:13-58
+60            android:value="@integer/google_play_services_version" />
+60-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:32:13-66
+61        <meta-data
+61-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:33:9-35:54
+62            android:name="com.google.android.geo.API_KEY"
+62-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:34:13-58
+63            android:value="@string/GOOGLE_API_KEY" />
+63-->C:\Users\Home\AndroidStudioProjects\Run-Tracker\app\src\main\AndroidManifest.xml:35:13-51
+64
+65        <service
+65-->[androidx.room:room-runtime:2.5.1] C:\Users\Home\.gradle\caches\transforms-3\c1ebb48768e078649b13473b8c2eb5f6\transformed\room-runtime-2.5.1\AndroidManifest.xml:24:9-28:63
+66            android:name="androidx.room.MultiInstanceInvalidationService"
+66-->[androidx.room:room-runtime:2.5.1] C:\Users\Home\.gradle\caches\transforms-3\c1ebb48768e078649b13473b8c2eb5f6\transformed\room-runtime-2.5.1\AndroidManifest.xml:25:13-74
+67            android:directBootAware="true"
+67-->[androidx.room:room-runtime:2.5.1] C:\Users\Home\.gradle\caches\transforms-3\c1ebb48768e078649b13473b8c2eb5f6\transformed\room-runtime-2.5.1\AndroidManifest.xml:26:13-43
+68            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+68-->[androidx.room:room-runtime:2.5.1] C:\Users\Home\.gradle\caches\transforms-3\c1ebb48768e078649b13473b8c2eb5f6\transformed\room-runtime-2.5.1\AndroidManifest.xml:27:13-37
+69        <uses-library
+69-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+70            android:name="org.apache.http.legacy"
+70-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+71            android:required="false" />
+71-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Home\.gradle\caches\transforms-3\a87a52218e8adb1d721140e8e9761f5d\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+72
+73        <activity
+73-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Home\.gradle\caches\transforms-3\ffabb974d53d23ed27812f6b8598f68a\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+74            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+74-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Home\.gradle\caches\transforms-3\ffabb974d53d23ed27812f6b8598f68a\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+75            android:exported="false"
+75-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Home\.gradle\caches\transforms-3\ffabb974d53d23ed27812f6b8598f68a\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+76-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Home\.gradle\caches\transforms-3\ffabb974d53d23ed27812f6b8598f68a\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+77
+78        <provider
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+79            android:name="androidx.startup.InitializationProvider"
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+80            android:authorities="com.riyaz.runtracker.androidx-startup"
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+81            android:exported="false" >
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+82            <meta-data
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+84                android:value="androidx.startup" />
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\b26ca44e7fcd64eceee259b430afaff9\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+85            <meta-data
+85-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Home\.gradle\caches\transforms-3\a7d46bbe1373c037991dcfe29e4fa347\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+86                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+86-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Home\.gradle\caches\transforms-3\a7d46bbe1373c037991dcfe29e4fa347\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+87                android:value="androidx.startup" />
+87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Home\.gradle\caches\transforms-3\a7d46bbe1373c037991dcfe29e4fa347\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+88        </provider>
+89    </application>
+90
+91</manifest>
