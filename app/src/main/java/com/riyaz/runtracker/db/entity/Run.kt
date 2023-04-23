@@ -6,7 +6,6 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 import com.riyaz.runtracker.util.TypeConverter
 
-@TypeConverters(TypeConverter::class)
 @Entity(tableName = "run_table")
 data class Run(
     var bitmap: Bitmap? = null,
