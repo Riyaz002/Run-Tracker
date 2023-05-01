@@ -1,7 +1,8 @@
-package com.riyaz.runtracker
+package com.riyaz.runtracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.riyaz.runtracker.R
 import com.riyaz.runtracker.db.dao.RunDao
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
