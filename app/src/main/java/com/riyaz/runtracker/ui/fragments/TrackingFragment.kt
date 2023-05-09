@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.google.android.gms.maps.GoogleMap
-import com.riyaz.runtracker.Constansts.START_OR_RESUME_ACTION
+import com.riyaz.runtracker.util.Constants.START_OR_RESUME_ACTION
 import com.riyaz.runtracker.R
 import com.riyaz.runtracker.databinding.FragmentTrackingBinding
 import com.riyaz.runtracker.service.TrackingService
@@ -37,8 +37,15 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
         binding.mapView.getMapAsync {
             map = it
         }
-        binding.tvLetsGo.setOnClickListener {
-            requireContext().startService(Intent(requireContext(),TrackingService::class.java).apply { action = START_OR_RESUME_ACTION })
+        binding.btnToggleRun.setOnClickListener {
+            sendCommandToService(START_OR_RESUME_ACTION)
+        }
+    }
+
+    private fun sendCommandToService(action: String){
+        Intent(requireContext(), TrackingService::class.java).also {
+            it.action = action
+            requireContext().startForegroundService(it)
         }
     }
 
